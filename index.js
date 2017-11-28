@@ -15,7 +15,7 @@ function tanka(options) {
         
 
         //connexion DB
-        require("dark-snow-model").connect(options.mongodbUrl)
+        require("mongo-leaf").connect(options.mongodbUrl)
 
 
         // Enabling Cros origin resource sharing
