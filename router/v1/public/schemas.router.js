@@ -51,8 +51,8 @@ router.get('/query/:query', (req, res) => {
 
 
 router.post('/', (req, res) => {
-    Schema.insert(req.body).then(() => {
-        response.created(res);
+    Schema.insert(req.body).then((schema) => {
+        response.created(res,schema);
     }).catch(err => {
         console.log(err)
         response.error(res);
