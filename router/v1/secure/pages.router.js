@@ -3,7 +3,7 @@ const Schema = require('../../../models/page.model.js');
 const router = require('express').Router();
 
 router.post('/', (req, res) => {
-    Schema.insert(req.body).then(() => {
+    Schema.insertOne(req.body).then(() => {
         response.created(res);
     }).catch(err => {
         console.log(err)
