@@ -4,7 +4,7 @@ const static = require('express').static;
 // A Library for standarisazion of JSON responses
 const response = require('dark-snow-response');
 
-router.use("/", static(__dirname + "../../../../upload"))
+router.use("/", static("upload"))
 
 router.post('/', function (req, res) {
     if (!req.files)
