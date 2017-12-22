@@ -1,6 +1,6 @@
 {
   "name": "tanka-cms",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "description": "A CMS for data driven websites",
   "main": "index.js",
   "scripts": {
