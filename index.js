@@ -38,6 +38,9 @@ function tanka(options) {
         // Enabling static apps
         app.use("/admin", express.static('./public/admin'));
         app.use("/", express.static('./public/client'));
+        // history mode handling for SPA
+        const history = require('connect-history-api-fallback');
+        app.use(history());
         app.listen(options.port);
         const chalk = require('chalk');
         const figlet = require('figlet');

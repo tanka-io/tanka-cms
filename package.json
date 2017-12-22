@@ -1,6 +1,6 @@
 {
   "name": "tanka-cms",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A CMS for data driven websites",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "chalk": "^2.3.0",
+    "connect-history-api-fallback": "^1.5.0",
     "dark-snow-response": "^1.0.0",
     "express": "^4.16.1",
     "express-fileupload": "^0.3.0",
