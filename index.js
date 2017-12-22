@@ -36,8 +36,8 @@ function tanka(options) {
         app.use("/api", require('./router/v1/v1.router'));
 
         // Enabling static apps
-        app.use("/admin", express.static('/public/admin'));
-        app.use("/", express.static('/public/client'));
+        app.use("/admin", express.static('./public/admin'));
+        app.use("/", express.static('./public/client'));
         app.listen(options.port);
         const chalk = require('chalk');
         const figlet = require('figlet');
